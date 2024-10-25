@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio </title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  <style>
+    .fade {
+      transition: opacity 1s ease-in-out;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+<header class="bg-gray-600 p-4 fixed w-full z-10">
+    <div class="container mx-auto flex justify-between items-center">
+        
+        <h1 class="text-2xl font-bold text-white">Nourhene ouerghi</h1>
+        <nav>
+            <ul class="flex space-x-4 text-gray-300">
+                <li><a href="#home" class="hover:text-blue-500">Home</a></li>
+                <li><a href="#projects" class="hover:text-blue-500">Projects</a></li>
+                <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section id="home" class="relative h-screen bg-cover bg-center flex items-center justify-center overflow-hidden">
+    <div id="background-images" class="absolute inset-0">
+        <div class="bg-cover bg-center h-full transition-opacity duration-1000 opacity-100" style="background-image: url('https://www.livementor.com/wpapp/uploads/2024/06/developpeur-web-1620x1080.jpg');"></div>
+    </div>
+    <div class="text-center text-white p-8 bg-black bg-opacity-50 rounded relative z-10">
+        <h2 class="text-4xl sm:text-6xl font-bold mb-4">Hello, welcome to my portfolio</h2>
+        <p class="text-lg sm:text-xl">I am a web developer passionate about the creation of intuitive and efficient user experiences.</p>
+    </div>
+</section>
+
+
+<style>
+    #background-images {
+        overflow: hidden;
+    }
+
+    #background-images > div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+</style>
+
+<section id="skills" class="py-16" style="background-color: #4e6da1;">
+    <div class="container mx-auto">
+        <h3 class="text-3xl font-bold text-center mb-8 text-white">My skills</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            
+            <!-- HTML & CSS -->
+            <div class="p-6 bg-white shadow-md rounded text-center">
+                <img src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML Icon" class="mx-auto mb-4 w-16 h-16">
+                <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS Icon" class="mx-auto mb-4 w-16 h-16">
+                <h4 class="text-xl font-bold mb-2">HTML & CSS</h4>
+                <p class="text-gray-700">Modern interface and layout design.</p>
+            </div>
+            
+            <!-- JavaScript -->
+            <div class="p-6 bg-white shadow-md rounded text-center">
+                <img src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript Icon" class="mx-auto mb-4 w-16 h-16">
+                <h4 class="text-xl font-bold mb-2">JavaScript</h4>
+                <p class="text-gray-700">Development of dynamic and interactive features.</p>
+            </div>
+            
+            <!-- React & Vue -->
+            <div class="p-6 bg-white shadow-md rounded text-center">
+                <img src="https://img.icons8.com/color/48/000000/react-native.png" alt="React Icon" class="mx-auto mb-4 w-16 h-16">
+                <img src="https://img.icons8.com/color/48/000000/vue-js.png" alt="Vue Icon" class="mx-auto mb-4 w-16 h-16">
+                <h4 class="text-xl font-bold mb-2">React & Vue</h4>
+                <p class="text-gray-700">Creation of reactive components and SPA web applications.</p>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="py-16 bg-white">
+    <div class="container mx-auto">
+        <h3 class="text-3xl font-bold text-center mb-8">My projects</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <!-- Project  1 -->
+            <div class="bg-gray-100 p-6 shadow-lg rounded">
+                <img src="https://images.pexels.com/photos/3184293/pexels-photo-3184293.jpeg" alt="Projet 1" class="w-full h-40 object-cover rounded mb-4">
+                <h4 class="text-2xl font-semibold mb-2">Task tracking application</h4>
+                <p class="text-gray-700">Task and projects management with collaborative features.</p>
+            </div>
+
+            <!-- Project  2 -->
+            <div class="bg-gray-100 p-6 shadow-lg rounded">
+                <img src="https://images.pexels.com/photos/3772584/pexels-photo-3772584.jpeg" alt="Projet 2" class="w-full h-40 object-cover rounded mb-4">
+                <h4 class="text-2xl font-semibold mb-2">E-commerce site</h4>
+                <p class="text-gray-700"> Online sales platform with basket and secure payment system.</p>
+            </div>
+
+            <!-- Project  3 -->
+            <div class="bg-gray-100 p-6 shadow-lg rounded">
+                <img src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg" alt="Projet 3" class="w-full h-40 object-cover rounded mb-4">
+                <h4 class="text-2xl font-semibold mb-2">Analysis dashboard</h4>
+                <p class="text-gray-700">Real -time data analysis interface for companies.</p>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+
+<style>
+    .project-card {
+        transform: translateY(20px); 
+    }
+</style>
+
+
+<!-- Contact Form -->
+<section id="contact" class="py-16 bg-gray-100">
+    <div class="container mx-auto">
+        <h3 class="text-3xl font-bold text-center mb-8">Me Contacter</h3>
+        <form class="max-w-lg mx-auto bg-white p-6 shadow-lg rounded">
+            <div class="mb-4">
+                <label for="name" class="block text-gray-700">Nom</label>
+                <input type="text" id="name" class="w-full p-2 border border-gray-300 rounded">
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-gray-700">Email</label>
+                <input type="email" id="email" class="w-full p-2 border border-gray-300 rounded">
+            </div>
+            <div class="mb-4">
+                <label for="message" class="block text-gray-700">Message</label>
+                <textarea id="message" class="w-full p-2 border border-gray-300 rounded"></textarea>
+            </div>
+            <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded">Envoyer</button>
+        </form>
+    </div>
+</section>
+
+
+<footer class="bg-gray-600 text-white py-6">
+    <div class="container mx-auto text-center">
+        <p>&copy; 2024 My portfolio. All rights reserved.</p>
+        <div class="flex justify-center space-x-4 mt-4">
+            <a href="#" class="text-blue-400 hover:text-blue-500"><i class="fab fa-twitter fa-lg"></i></a>
+            <a href="#" class="text-blue-600 hover:text-blue-700"><i class="fab fa-facebook fa-lg"></i></a>
+            <a href="#" class="text-pink-600 hover:text-pink-700"><i class="fab fa-instagram fa-lg"></i></a>
+            <a href="#" class="text-gray-500 hover:text-gray-700"><i class="fab fa-linkedin fa-lg"></i></a>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>
